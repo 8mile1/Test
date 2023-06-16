@@ -11,6 +11,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			function scrollToTop() {
+			  window.scrollTo({
+				top: 0,
+				behavior: "smooth"
+			  });
+			}
+		  </script>
 	</head>
 	<body class="is-preload">
 
@@ -156,17 +164,15 @@
 									</ol>
 								</p>
 								
-								<section id="five" class="Measurements">
+					<section id="five" class="Measurements">
 									<!-- <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a> -->
-									<div class="content">
-										<div class="inner">
-											<h1>Measurements</h1>
-											<iframe 
+						<div class="content">
+							<div class="inner">
+								<h1>Measurements</h1>
+										<iframe 
 											src="https://www.youtube.com/embed/3ZSfY87v6pM">
-											
-											</iframe>
-											
-											
+										</iframe>
+
 										</div>
 									</div>
 								</section>
@@ -185,7 +191,7 @@
 						<p>Send us a message</p>
 						<div class="split style1">
 							<section>
-								<form method="post" action="#">
+								<form method="post" action="send-email.php">
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
 											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
@@ -208,7 +214,7 @@
 											<label for="demo-copy">Email me a copy</label>
 										</div>
 										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-human" name="demo-human" >
+											<input type="checkbox" id="demo-human" name="demo-human" required >
 											<label for="demo-human">Not a robot</label>
 										</div>
 										<div class="col-12">
@@ -240,7 +246,7 @@
 									</li>
 									<li>
 										<h3>Phone</h3>
-										<span>(+27) 759-1523</span>
+										<span>(+27)82-759-1523</span>
 									</li>
 									<li>
 										<h3>Social</h3>
@@ -249,6 +255,8 @@
 											<li><a href="https://www.facebook.com/emile.mukhacwa" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											<li><a href="https://api.whatsapp.com/send?phone=+27616545997&text=Hello%20Kombi's Creation This is a test from the web. Do not reply">Send us a WhatsApp Message</a>
+</li>
 										</ul>
 									</li>
 								</ul>
@@ -265,7 +273,7 @@
 					<ul class="menu">
 						<li>&copy; Untitled. All rights reserved.Designed by: <a href="index.html">Emile Mukhacwa</a></li>
 					</ul>
-					<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+					<button onclick="scrollToTop()" >Scroll to Top</button>
 				</div>
 			</footer>
 
