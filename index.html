@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 		<script>
 			function scrollToTop() {
 			  window.scrollTo({
@@ -19,6 +20,7 @@
 			  });
 			}
 		  </script>
+	
 	</head>
 	<body class="is-preload">
 
@@ -191,39 +193,41 @@
 						<p>Send us a message</p>
 						<div class="split style1">
 							<section>
-								<form method="post" action="send-email.php">
+							
+							
+								<form method="post" action="send-email.php" onsubmit="return validateForm()">
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
-											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+											<input type="text" name="name" id="name" value="" placeholder="Name" required />
 										</div>
 										<div class="col-6 col-12-xsmall">
-											<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												<input type="email" name="email" id="email" placeholder="Email" required />
 										</div>
 										<div class="col-12">
-											<select name="demo-category" id="demo-category">
-												
-												<option value="1">Category</option>
+											<select name="category" id="category">
+												<option value="">Category</option>
 												<option value="1">Shipping</option>
 												<option value="1">Category 3</option>
 												<option value="1">Quataion</option>
 											</select>
 										</div>
 										
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-copy" name="demo-copy">
-											<label for="demo-copy">Email me a copy</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-human" name="demo-human" required >
-											<label for="demo-human">Not a robot</label>
-										</div>
+									
 										<div class="col-12">
-											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6" required ></textarea>
+										</div>
+										<div class="col-6 col-12-small">
+											<input type="checkbox" id="copy" name="copy">
+											<label for="copy">Email me a copy</label>
+										</div>
+										<div class="col-6 col-12-small">
+    										<input type="checkbox" id="robotCheck" name="robotCheck" required>
+											<label for="robotCheck">I'm not a robot:</label>
 										</div>
 										<div class="col-12">
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
-												<li><input type="reset" value="Reset" /></li>
+												<li><input type="submit" value="submit" class="primary" /></li>
+												<li><input type="reset" value="Reset"  class="primary" /></li>
 											</ul>
 										</div>
 									</div>
@@ -278,6 +282,7 @@
 			</footer>
 
 		<!-- Scripts -->
+			<script src="assets/js/send-email.js"></script> 
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -285,7 +290,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<!--<script src="assets/js/send-email.js"></script> -->
+			<script src="assets/js/validate.js"></script> 
 
 	</body>
 </html>

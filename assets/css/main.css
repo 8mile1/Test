@@ -3280,6 +3280,14 @@ textarea {
 
 			}
 
+			@media screen and (max-width: 600px) {
+
+				.wrapper > .inner {
+					padding: 3em 2em 1em 2em ;
+				}
+
+			}
+
 		.wrapper.alt {
 			background-color: #261c3e;
 		}
