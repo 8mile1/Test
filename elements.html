@@ -39,18 +39,21 @@
 								<h3>Design show</h3>
 								<div class="box alt">
 									<div class="row gtr-uniform">
-										<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic100.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic11.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic100.jpg" alt="" /></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic11.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic11.jpg" alt="Image" onclick="openImageViewer(this)" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="Image" onclick="openImageViewer(this)"/></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="Image" onclick="openImageViewer(this)"/></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="Image" onclick="openImageViewer(this)" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="Image" onclick="openImageViewer(this)" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic100.jpg"alt="Image" onclick="openImageViewer(this)" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="Image" onclick="openImageViewer(this)" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="Image" onclick="openImageViewer(this)" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic11.jpg" alt="Image" onclick="openImageViewer(this)" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="Image" onclick="openImageViewer(this)" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="Image" onclick="openImageViewer(this)" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/pic100.jpg" alt="Image" onclick="openImageViewer(this)" /></span></div>
+										<div id="imageViewer" class="image-viewer">
+											<img id="imageView" src="" alt="Image">
+										  </div>
 									</div>
 								</div>
 							<!--	<h3>Left &amp; Right</h3>
@@ -69,7 +72,7 @@
 												<tr>
 													<th>Name</th>
 													<th>Description</th>
-													<th>Pric</th>
+													<th>Price</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -108,9 +111,9 @@
 										</table>
 									</div>
 									</section>
-
-								
-
+									
+									
+						
 			
 
 	<!-- Footer -->
@@ -130,6 +133,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/validate.js"></script> 
 
 			
 	</body>

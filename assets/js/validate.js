@@ -32,3 +32,21 @@ function validateForm() {
   // All validation passed, submit the form
   return true;
 }
+
+function openImageViewer(image) {
+  var imageViewer = document.getElementById("imageViewer");
+  var imageView = document.getElementById("imageView");
+
+  imageView.src = image.src;
+  imageViewer.style.display = "block";
+}
+
+
+  // Zoom in/out on the image when clicked
+  document.getElementById("imageView").onclick = function() {
+    this.classList.toggle("zoomed");
+  };
+// Close the image viewer when the overlay is clicked
+document.getElementById("imageViewer").onclick = function() {
+  this.style.display = "none";
+};
