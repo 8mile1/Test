@@ -33,6 +33,15 @@ function validateForm() {
   return true;
 }
 
+
+function submitForm() {
+  // Get the form element
+  var form = document.getElementById("myForm");
+
+  // Submit the form
+  form.submit();
+}
+
 function openImageViewer(image) {
   var imageViewer = document.getElementById("imageViewer");
   var imageView = document.getElementById("imageView");
